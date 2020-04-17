@@ -1,0 +1,94 @@
+.container{
+    max-width: 980px;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+img{
+    max-width: 100%;
+}
+span{
+color: rgb(143, 94, 16);
+}
+body{
+line-height: 1.3;
+font-size: 1rem;
+margin:0;
+color:rgb(1, 95, 1);
+}
+/*********************
+ typography
+ ********************/
+h1{
+    font-size:3rem;
+    text-align: center;
+}
+h2{
+font-size: 1.5rem;
+}
+p{
+    margin-top:0;
+}
+/*********************
+navibation
+ ********************/
+ nav ul{
+     list-style: none;
+     display:flex;
+     padding:0;
+     justify-content: center;
+ }
+ nav li{
+     margin: 0 1em;
+ }
+ nav a{
+        padding:.25em 0;
+        color:red;
+         text-decoration: none;
+         font-weight: 700;
+ }
+ nav a:hover, nav focus {
+color:orange;
+ }
+ current-page{
+     border-bottom: 1px dotted ;
+     color:red;
+ }
+
+/*********************
+flex section
+ ********************/
+
+.column{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin:1em 0;
+}
+@media (max-width:600px) {
+
+    .column{
+        
+    flex-direction: column;}
+}
+.col-1{
+width:25%;
+}
+.col-2{
+width:50%;
+}
+.col-3{
+width:75%;
+}
+.col-bg{
+    background:rgba(0, 128, 0, 0.842);
+    color:rgb(255, 255, 255);
+    padding:1em;
+}
+@media (max-width:600px) {
+
+    .col{
+    width: 100%;}
+}
